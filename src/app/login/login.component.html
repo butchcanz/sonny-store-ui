@@ -1,0 +1,32 @@
+<br>
+<br>
+<br>
+<div class="grid">
+    <div class="col">
+    </div>
+    <div class="col">
+        <p-card header="Login">
+            <div class="field grid">
+                <label class="col-fixed" style="width:100px">User</label>
+                <div class="col">
+                    <input type="text" pInputText [(ngModel)]="username" />
+                </div>
+            </div>
+            <div class="field grid">
+                <label class="col-fixed" style="width:100px">Password</label>
+                <div class="col">
+                    <input type="password" pInputText [(ngModel)]="password" />
+                </div>
+            </div>
+            <br>
+            <div class="field grid">
+                <label class="col-fixed" style="width:100px"></label>
+                <div class="col">
+                    <p-button label="Login" routerLink="/dashboard"></p-button>
+                </div>
+            </div>
+        </p-card>
+    </div>
+    <div class="col">
+    </div>
+</div>

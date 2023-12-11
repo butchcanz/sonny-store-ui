@@ -1,0 +1,12 @@
+<div class="card">
+    <p-menubar [model]="items">
+        <ng-template pTemplate="start">
+            <p>Sonny Sari-Sari Store</p>
+        </ng-template>
+        <ng-template pTemplate="end">
+            <p-toast></p-toast>
+            <p-confirmPopup></p-confirmPopup>
+            <button pButton pRipple label="Logout" (click)="confirm($any($event))" class="p-button-danger"></button>
+        </ng-template>
+    </p-menubar>
+</div>
