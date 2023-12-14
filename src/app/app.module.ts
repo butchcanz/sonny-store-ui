@@ -30,6 +30,7 @@ import { ToastModule } from 'primeng/toast';
 import { CardModule } from 'primeng/card';
 import { ImageModule } from 'primeng/image';
 import { TableModule } from 'primeng/table';
+import { DialogModule } from 'primeng/dialog';
 
 
 @NgModule({
@@ -65,7 +66,8 @@ import { TableModule } from 'primeng/table';
     ToastModule,
     CardModule,
     ImageModule,
-    TableModule
+    TableModule,
+    DialogModule
   ],
   providers: [
     provideClientHydration()

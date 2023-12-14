@@ -1,6 +1,6 @@
 export class ItemModel {
-    code: string = "";
-    name: string = "";
-    category: string = "";
+    itemnumber: number = 0;
+    itemname: string = "";
+    price: string = "";
     quantity: number = 0;
 }

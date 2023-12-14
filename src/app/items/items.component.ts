@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ItemModel } from './items.model';
+import { MessageService } from 'primeng/api';
 
 interface Column {
   field: string;
@@ -9,17 +10,30 @@ interface Column {
 @Component({
   selector: 'app-items',
   templateUrl: './items.component.html',
-  styleUrl: './items.component.scss'
+  styleUrl: './items.component.scss',
+  providers: [MessageService]
 })
 export class ItemsComponent {
   products!: ItemModel[];
 
   cols!: Column[];
-
-  constructor() {}
-
-  ngOnInit() {
+  visible: boolean = false;
   
+  constructor ( private messageService: MessageService ) {}
+
+  showDialog() {
+    this.visible = true;
+}
+show() {
+  this.messageService.add({ severity: 'success', summary: 'Added Successfully', detail: '' });
+}
+  ngOnInit() {
+
+    
+
+  this.products =  [
+    {itemnumber: 1, itemname: "Growers", price: "16.00", quantity: 20 }
+  ]
 
       this.cols = [
           { field: 'code', header: 'Code' },
