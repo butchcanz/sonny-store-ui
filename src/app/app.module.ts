@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { ItemsComponent } from './items/items.component';
+import { ItemServiceComponent } from './items/itemservice.component';
 import { ItemDetailsComponent } from './item-details/item-details.component';
 import { SalesComponent } from './sales/sales.component';
 import { SalesDetailsComponent } from './sales-details/sales-details.component';
@@ -31,7 +32,7 @@ import { CardModule } from 'primeng/card';
 import { ImageModule } from 'primeng/image';
 import { TableModule } from 'primeng/table';
 import { DialogModule } from 'primeng/dialog';
-
+import { PickListModule } from 'primeng/picklist';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { DialogModule } from 'primeng/dialog';
     DashboardComponent,
     LoginComponent,
     ItemsComponent,
+    ItemServiceComponent,
     ItemDetailsComponent,
     SalesComponent,
     SalesDetailsComponent,
@@ -67,7 +69,8 @@ import { DialogModule } from 'primeng/dialog';
     CardModule,
     ImageModule,
     TableModule,
-    DialogModule
+    DialogModule,
+    PickListModule
   ],
   providers: [
     provideClientHydration()
