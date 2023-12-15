@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-stock-in',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrl: './stock-in.component.scss'
 })
 export class StockInComponent {
+  items: MenuItem[] | undefined;
 
+  
+
+  ngOnInit() {
+    this.items = [
+ 
+    ];
+  }
 }
+  
+
+

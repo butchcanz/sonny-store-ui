@@ -1,2 +1,10 @@
 <app-header></app-header>
-<p>stock-in works!</p>
+<p-menubar [model]="items">
+    <ng-template pTemplate="start">
+        <p>Please Add Items</p>
+    </ng-template>
+    <br>
+    <ng-template pTemplate="end">
+        <button pButton pRipple label="Add Items"></button>
+    </ng-template>
+</p-menubar>
